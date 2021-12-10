@@ -4,7 +4,8 @@ import axios from 'axios';
 import Character from './components/Character';
 import styled from 'styled-components';
 
-const App = () => {
+const App = (event) => {
+  event.preventDefault()
   // Try to think through what state you'll need for this app before starting. Then build out
   // the state properties here.
   const [star, setStar] = useState();
